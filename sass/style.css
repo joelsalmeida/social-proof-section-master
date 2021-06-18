@@ -47,6 +47,12 @@ body {
   padding: 3em 1.5em;
   max-width: 500px;
   margin: 0 auto;
+  transition: 0.8s;
+}
+@media (min-width: 1024px) {
+  .social-proof-container {
+    max-width: 650px;
+  }
 }
 @media (min-width: 1336px) {
   .social-proof-container {
@@ -101,20 +107,6 @@ body {
   }
 }
 
-@media (min-width: 1336px) {
-  .rated--reviews {
-    position: relative;
-    right: 6em;
-  }
-}
-
-@media (min-width: 1336px) {
-  .rated--guru {
-    position: relative;
-    right: 3em;
-  }
-}
-
 .social-proof__rated-container {
   text-align: center;
 }
@@ -158,6 +150,20 @@ body {
 @media (min-width: 1336px) {
   .social-proof__rated__content {
     padding-left: 1em;
+  }
+}
+
+@media (min-width: 1336px) {
+  .rated--reviews {
+    position: relative;
+    right: 6em;
+  }
+}
+
+@media (min-width: 1336px) {
+  .rated--guru {
+    position: relative;
+    right: 3em;
   }
 }
 

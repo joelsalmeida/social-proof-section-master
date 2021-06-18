@@ -11,6 +11,9 @@ body {
     place-items: center;
 }
 
+
+// ** BACKGROUND
+
 .top-bg {
     position: fixed;
     top: 0;
@@ -32,6 +35,12 @@ body {
     padding: 3em 1.5em;
     max-width: 500px;
     margin: 0 auto;
+    transition: 0.8s;
+
+    @media (min-width: 1024px) {
+        max-width: 650px;
+    }
+
     @media (min-width: $desktop) {
         max-width: 1110px;
     }
@@ -81,20 +90,6 @@ body {
     }
 }
 
-.rated--reviews {
-    @media (min-width: $desktop) {
-        position: relative;
-        right: 6em;
-    }
-}
-
-.rated--guru {
-    @media (min-width: $desktop) {
-        position: relative;
-        right: 3em;
-    }
-}
-
 
 // ** SOCIAL PROOF RATED
 
@@ -133,6 +128,20 @@ body {
     font-size: 0.8rem;
     @media (min-width: $desktop) {
         padding-left: 1em;
+    }
+}
+
+.rated--reviews {
+    @media (min-width: $desktop) {
+        position: relative;
+        right: 6em;
+    }
+}
+
+.rated--guru {
+    @media (min-width: $desktop) {
+        position: relative;
+        right: 3em;
     }
 }
 
