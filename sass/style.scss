@@ -1,4 +1,30 @@
 @use "reset" as *; @use "globals" as *; @use "variables" as *;
+// ** CENTER EVERYTHING
+
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+}
+
+.top-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bottom-bg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
 
 // ** SOCIAL PROOF CONTAINER
 
@@ -6,13 +32,28 @@
     padding: 3em 1.5em;
     max-width: 500px;
     margin: 0 auto;
+    @media (min-width: $desktop) {
+        max-width: 1110px;
+    }
 }
 
 
 // ** SOCIAL PROOF CALL
 
+.social-proof__top-section {
+    @media (min-width: $desktop) {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2.5em;
+    }
+}
+
 .social-proof__call {
     text-align: center;
+    @media (min-width: $desktop) {
+        width: 50%;
+        text-align: left;
+    }
 }
 
 .social-proof__call__title {
@@ -21,6 +62,11 @@
     font-weight: 700;
     line-height: 1em;
     padding: 0 1em 1em 1em;
+    @media (min-width: $desktop) {
+        padding-left: 0;
+        font-size: 3rem;
+        padding-bottom: 0.5em;
+    }
 }
 
 .social-proof__call__content {
@@ -28,6 +74,25 @@
     font-weight: 500;
     font-size: 0.9rem;
     padding-bottom: 2em;
+    @media (min-width: $desktop) {
+        line-height: 150%;
+        max-width: 85%;
+        font-weight: 700;
+    }
+}
+
+.rated--reviews {
+    @media (min-width: $desktop) {
+        position: relative;
+        right: 6em;
+    }
+}
+
+.rated--guru {
+    @media (min-width: $desktop) {
+        position: relative;
+        right: 3em;
+    }
 }
 
 
@@ -35,6 +100,9 @@
 
 .social-proof__rated-container {
     text-align: center;
+    @media (min-width: $desktop) {
+        margin: auto 0;
+    }
 }
 
 .social-proof__rated {
@@ -42,6 +110,11 @@
     border-radius: 7px;
     margin-bottom: 1em;
     padding: 1em 0;
+    @media (min-width: $desktop) {
+        display: flex;
+        justify-content: center;
+        padding: 1.2em 2em 0.8em 2em;
+    }
 }
 
 .social-proof__rated__stars {
@@ -49,16 +122,28 @@
     img{
         padding: 0 0.1em;
     }
+    @media (min-width: $desktop) {
+        padding-bottom: 0;
+    }
 }
 
 .social-proof__rated__content {
     font-weight: 700;
     color: $darkMagenta;
     font-size: 0.8rem;
+    @media (min-width: $desktop) {
+        padding-left: 1em;
+    }
 }
 
 
 // ** SOCIAL PROOF CARDS
+
+.social-proof__cards-container {
+    @media (min-width: $desktop) {
+        display: flex;
+    }
+}
 
 .social-proof__card {
     background-color: $darkMagenta;
@@ -69,7 +154,13 @@
 }
 
 .social-proof__card:not(:last-child) {
-    margin-bottom: 1em;
+    @media (max-width: $mobile) {
+        margin-bottom: 1em;
+    }
+
+    @media (min-width: $desktop) {
+        margin-right: 1.6em;
+    }
 }
 
 .social-proof__card__user {
@@ -98,4 +189,18 @@
 .social-proof__card__user-text {
     grid-column: 2;
     padding-left: 2em;
+}
+
+.card--irene {
+    @media (min-width: $desktop) {
+        position: relative;
+        top: 1.5em;
+    }
+}
+
+.card--anne {
+    @media (min-width: $desktop) {
+        position: relative;
+        top: 3em;
+    }
 }
