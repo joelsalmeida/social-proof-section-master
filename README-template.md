@@ -25,7 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Mobile - 375px](screenshots\social-proof-section_375.png)
+
+![Desktop - 1440px](screenshots\social-proof-section_1440.png)
 
 ### Links
 
