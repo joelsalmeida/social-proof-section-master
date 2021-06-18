@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+.social-proof-container {
+  padding: 3em 1.5em;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.social-proof__call {
+  text-align: center;
+}
+
+.social-proof__call__title {
+  color: #502050;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1em;
+  padding: 0 1em 1em 1em;
+}
+
+.social-proof__call__content {
+  color: #937b92;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding-bottom: 2em;
+}
+
+.social-proof__rated-container {
+  text-align: center;
+}
+
+.social-proof__rated {
+  background-color: #f7f2f7;
+  border-radius: 7px;
+  margin-bottom: 1em;
+  padding: 1em 0;
+}
+
+.social-proof__rated__stars {
+  padding-bottom: 0.5em;
+}
+.social-proof__rated__stars img {
+  padding: 0 0.1em;
+}
+
+.social-proof__rated__content {
+  font-weight: 700;
+  color: #502050;
+  font-size: 0.8rem;
+}
+
+.social-proof__card {
+  background-color: #502050;
+  color: white;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  padding: 2.5em;
+}
+
+.social-proof__card:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.social-proof__card__user {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-bottom: 1em;
+}
+.social-proof__card__user__img {
+  width: 40px;
+  border-radius: 50%;
+  grid-column: 1;
+  grid-row: 1;
+}
+.social-proof__card__user__name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.social-proof__card__user__type {
+  color: #ee68a4;
+  opacity: 80%;
+}
+
+.social-proof__card__user-text {
+  grid-column: 2;
+  padding-left: 2em;
+}/*# sourceMappingURL=style.css.map */
